@@ -1,0 +1,11 @@
+expected_status, expression, expected_value
+EQUALS, 2 + 2 * 2,          6
+EQUALS, 2 + 5 + 7,          14
+EQUALS, 2 + 10 / 5 * 2,     6
+NOT_EQUALS, 2 + 2 * 2,      8
+NOT_EQUALS, 2 * 2 + 2,      8
+EXCEPTION,   ,              0
+EXCEPTION, 2 * 2 +,         0
+EXCEPTION, 2 4 * 2,         0
+EXCEPTION, 2 + * 2,         0
+EXCEPTION, 2 = 2,           0
